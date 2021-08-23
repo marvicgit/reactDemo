@@ -1,0 +1,113 @@
+
+entity Categoria {
+	nombre String required
+    descripcion String
+}
+
+entity SubCategoria {
+	nombre String required
+    descripcion String
+}
+
+entity Producto {
+	nombre String required
+    descripcion String
+    precio Double required
+    stock Integer
+    tallas String
+    colores String
+    tags String
+    venta Boolean
+    descuento Double
+    nuevo Boolean
+}
+
+entity Variante {
+	sku String
+    talla String required
+    color String required
+    stock Integer required
+    precio Double
+}
+
+entity Imagen {
+    indice Integer required
+    nombre String required
+    peso Double required
+    extension String required
+    imagen ImageBlob required
+}
+
+entity Cliente {
+	nombres String required
+    primerApellido String
+    segundoApellido String
+    telefono String
+    email String
+    direccion String
+    referencia String
+    latitude Double
+    longitude Double
+}
+
+entity Venta {
+	fecha LocalDate required
+    descuento Double
+    total Double
+}
+
+entity VentaDetalle {
+	talla String
+    color String
+    urlImagen String
+    precio Double
+	cantidad Integer required
+    subTotal Double
+}
+
+entity Tarjeta {
+	numero String required
+    vigencia String required
+    codigo String required
+}
+
+entity Compra {
+	fecha LocalDate required
+    total Double
+}
+
+entity CompraDetalle {
+	cantidad Integer required
+    precio Double
+    subTotal Double
+}
+
+relationship OneToMany {
+	Categoria to SubCategoria{categoria}
+    SubCategoria to Producto{subCategoria}
+    Venta to VentaDetalle{venta}
+    Compra to CompraDetalle{compra}
+    Cliente to Tarjeta{cliente}
+    Cliente to Venta{cliente}
+    Producto to CompraDetalle{producto}
+    Producto to VentaDetalle{producto}
+    Producto to Imagen{producto}
+    Producto to Variante{producto}
+    Imagen to Variante{imagen}
+}
+
+
+paginate Categoria, SubCategoria, Producto, 
+Cliente, Venta, VentaDetalle, Tarjeta,
+Compra, CompraDetalle, Imagen,
+Variante with pagination
+
+dto * with mapstruct except
+Cliente, Venta, VentaDetalle, Tarjeta,
+Compra, CompraDetalle
+
+
+service all with serviceImpl except Categoria, SubCategoria, 
+Cliente, Venta, VentaDetalle, Tarjeta,
+Compra, CompraDetalle, Imagen,
+Variante

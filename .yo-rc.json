@@ -43,7 +43,21 @@
     "devServerPort": 9060,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": [
+      "Categoria",
+      "SubCategoria",
+      "Producto",
+      "Variante",
+      "Imagen",
+      "Cliente",
+      "Venta",
+      "VentaDetalle",
+      "Tarjeta",
+      "Compra",
+      "CompraDetalle"
+    ],
+    "lastLiquibaseTimestamp": 1629739105000
   },
   "git-provider": "GitHub",
   "git-company": "marvicgit",

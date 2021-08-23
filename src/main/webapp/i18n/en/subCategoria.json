@@ -1,0 +1,27 @@
+{
+  "reactDemoApp": {
+    "subCategoria": {
+      "home": {
+        "title": "Sub Categorias",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sub Categoria",
+        "createOrEditLabel": "Create or edit a Sub Categoria",
+        "notFound": "No Sub Categorias found"
+      },
+      "created": "A new Sub Categoria is created with identifier {{ param }}",
+      "updated": "A Sub Categoria is updated with identifier {{ param }}",
+      "deleted": "A Sub Categoria is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sub Categoria {{ id }}?"
+      },
+      "detail": {
+        "title": "Sub Categoria"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "descripcion": "Descripcion",
+      "producto": "Producto",
+      "categoria": "Categoria"
+    }
+  }
+}

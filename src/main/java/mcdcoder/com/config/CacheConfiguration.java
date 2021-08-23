@@ -48,6 +48,28 @@ public class CacheConfiguration {
             createCache(cm, mcdcoder.com.domain.User.class.getName());
             createCache(cm, mcdcoder.com.domain.Authority.class.getName());
             createCache(cm, mcdcoder.com.domain.User.class.getName() + ".authorities");
+            createCache(cm, mcdcoder.com.domain.Categoria.class.getName());
+            createCache(cm, mcdcoder.com.domain.Categoria.class.getName() + ".subCategorias");
+            createCache(cm, mcdcoder.com.domain.SubCategoria.class.getName());
+            createCache(cm, mcdcoder.com.domain.SubCategoria.class.getName() + ".productos");
+            createCache(cm, mcdcoder.com.domain.Producto.class.getName());
+            createCache(cm, mcdcoder.com.domain.Producto.class.getName() + ".compraDetalles");
+            createCache(cm, mcdcoder.com.domain.Producto.class.getName() + ".ventaDetalles");
+            createCache(cm, mcdcoder.com.domain.Producto.class.getName() + ".imagens");
+            createCache(cm, mcdcoder.com.domain.Producto.class.getName() + ".variantes");
+            createCache(cm, mcdcoder.com.domain.Variante.class.getName());
+            createCache(cm, mcdcoder.com.domain.Imagen.class.getName());
+            createCache(cm, mcdcoder.com.domain.Imagen.class.getName() + ".variantes");
+            createCache(cm, mcdcoder.com.domain.Cliente.class.getName());
+            createCache(cm, mcdcoder.com.domain.Cliente.class.getName() + ".tarjetas");
+            createCache(cm, mcdcoder.com.domain.Cliente.class.getName() + ".ventas");
+            createCache(cm, mcdcoder.com.domain.Venta.class.getName());
+            createCache(cm, mcdcoder.com.domain.Venta.class.getName() + ".ventaDetalles");
+            createCache(cm, mcdcoder.com.domain.VentaDetalle.class.getName());
+            createCache(cm, mcdcoder.com.domain.Tarjeta.class.getName());
+            createCache(cm, mcdcoder.com.domain.Compra.class.getName());
+            createCache(cm, mcdcoder.com.domain.Compra.class.getName() + ".compraDetalles");
+            createCache(cm, mcdcoder.com.domain.CompraDetalle.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

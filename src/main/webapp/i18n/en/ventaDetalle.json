@@ -1,0 +1,31 @@
+{
+  "reactDemoApp": {
+    "ventaDetalle": {
+      "home": {
+        "title": "Venta Detalles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Venta Detalle",
+        "createOrEditLabel": "Create or edit a Venta Detalle",
+        "notFound": "No Venta Detalles found"
+      },
+      "created": "A new Venta Detalle is created with identifier {{ param }}",
+      "updated": "A Venta Detalle is updated with identifier {{ param }}",
+      "deleted": "A Venta Detalle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Venta Detalle {{ id }}?"
+      },
+      "detail": {
+        "title": "Venta Detalle"
+      },
+      "id": "ID",
+      "talla": "Talla",
+      "color": "Color",
+      "urlImagen": "Url Imagen",
+      "precio": "Precio",
+      "cantidad": "Cantidad",
+      "subTotal": "Sub Total",
+      "venta": "Venta",
+      "producto": "Producto"
+    }
+  }
+}

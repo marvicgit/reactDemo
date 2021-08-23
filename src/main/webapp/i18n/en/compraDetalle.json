@@ -1,0 +1,28 @@
+{
+  "reactDemoApp": {
+    "compraDetalle": {
+      "home": {
+        "title": "Compra Detalles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Compra Detalle",
+        "createOrEditLabel": "Create or edit a Compra Detalle",
+        "notFound": "No Compra Detalles found"
+      },
+      "created": "A new Compra Detalle is created with identifier {{ param }}",
+      "updated": "A Compra Detalle is updated with identifier {{ param }}",
+      "deleted": "A Compra Detalle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Compra Detalle {{ id }}?"
+      },
+      "detail": {
+        "title": "Compra Detalle"
+      },
+      "id": "ID",
+      "cantidad": "Cantidad",
+      "precio": "Precio",
+      "subTotal": "Sub Total",
+      "compra": "Compra",
+      "producto": "Producto"
+    }
+  }
+}
