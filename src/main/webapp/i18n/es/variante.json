@@ -1,0 +1,30 @@
+{
+  "reactDemoApp": {
+    "variante": {
+      "home": {
+        "title": "Variantes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Variante",
+        "createOrEditLabel": "Crear o editar Variante",
+        "notFound": "Ningún Variantes encontrado"
+      },
+      "created": "Un nuevo Variante ha sido creado con el identificador {{ param }}",
+      "updated": "Un Variante ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Variante ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Variante {{ id }}?"
+      },
+      "detail": {
+        "title": "Variante"
+      },
+      "id": "ID",
+      "sku": "Sku",
+      "talla": "Talla",
+      "color": "Color",
+      "stock": "Stock",
+      "precio": "Precio",
+      "producto": "Producto",
+      "imagen": "Imagen"
+    }
+  }
+}

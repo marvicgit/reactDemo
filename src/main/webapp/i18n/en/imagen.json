@@ -1,0 +1,30 @@
+{
+  "reactDemoApp": {
+    "imagen": {
+      "home": {
+        "title": "Imagens",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Imagen",
+        "createOrEditLabel": "Create or edit a Imagen",
+        "notFound": "No Imagens found"
+      },
+      "created": "A new Imagen is created with identifier {{ param }}",
+      "updated": "A Imagen is updated with identifier {{ param }}",
+      "deleted": "A Imagen is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Imagen {{ id }}?"
+      },
+      "detail": {
+        "title": "Imagen"
+      },
+      "id": "ID",
+      "indice": "Indice",
+      "nombre": "Nombre",
+      "peso": "Peso",
+      "extension": "Extension",
+      "imagen": "Imagen",
+      "variante": "Variante",
+      "producto": "Producto"
+    }
+  }
+}

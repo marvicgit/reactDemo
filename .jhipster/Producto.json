@@ -1,0 +1,89 @@
+{
+  "name": "Producto",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "precio",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "stock",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tallas",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "colores",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "venta",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "descuento",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "nuevo",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "compraDetalle",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "compraDetalle"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "ventaDetalle",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "ventaDetalle"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "imagen",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "imagen"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "variante",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "variante"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "subCategoria",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "subCategoria"
+    }
+  ],
+  "entityTableName": "producto",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210823171817"
+}
